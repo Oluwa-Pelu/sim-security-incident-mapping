@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIM — Security Incident Mapping</title>
+<style>
+  :root{
+    --ink:#0e1a2b;
+    --panel:#132238;
+    --line:#24384f;
+    --paper:#f4f6f8;
+    --alert:#e2543a;
+    --alert-dim:#3a2620;
+    --safe:#3fae7b;
+    --muted:#7f93a8;
+    --text:#e9eef3;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+  }
+  header{
+    background:var(--ink);
+    color:var(--text);
+    padding:22px 28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:3px solid var(--alert);
+  }
+  header .brand{display:flex; align-items:center; gap:12px;}
+  header .mark{
+    width:38px;height:38px;border-radius:8px;
+    background:var(--alert);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800; font-size:15px; color:#fff;
+    flex-shrink:0;
+  }
+  header h1{font-size:18px; margin:0; letter-spacing:.3px;}
+  header p{margin:2px 0 0; font-size:12px; color:var(--muted);}
+  .layout{
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:0;
+    min-height:calc(100vh - 78px);
+  }
+  @media(max-width:860px){ .layout{grid-template-columns:1fr;} }
+
+  .panel{
+    background:var(--panel);
+    color:var(--text);
+    padding:26px;
+  }
+  .panel h2{
+    font-size:13px; text-transform:uppercase; letter-spacing:1.2px;
+    color:var(--muted); margin:0 0 18px;
+    border-bottom:1px solid var(--line); padding-bottom:10px;
+  }
+  label{display:block; font-size:12.5px; color:var(--muted); margin:14px 0 5px;}
+  select,input[type=text],textarea{
+    width:100%; background:#0e1a2b; border:1px solid var(--line);
+    color:var(--text); padding:10px 11px; border-radius:6px;
+    font-size:13.5px; font-family:inherit;
+  }
+  textarea{resize:vertical; min-height:70px;}
+  .toggle-row{
+    display:flex; align-items:center; gap:10px; margin-top:16px;
+    background:#0e1a2b; padding:10px 12px; border-radius:6px; border:1px solid var(--line);
+  }
+  .toggle-row input{width:auto;}
+  .toggle-row span{font-size:12.5px; color:var(--muted);}
+  button.submit{
+    margin-top:20px; width:100%; padding:12px; border:none; border-radius:6px;
+    background:var(--alert); color:#fff; font-weight:700; font-size:13.5px;
+    letter-spacing:.4px; cursor:pointer;
+  }
+  button.submit:hover{background:#c9482f;}
+  .hint{font-size:11px; color:var(--muted); margin-top:10px; line-height:1.5;}
+
+  main{padding:26px 30px;}
+  .stats{display:flex; gap:14px; margin-bottom:22px; flex-wrap:wrap;}
+  .stat{
+    background:#fff; border:1px solid #dde3e9; border-radius:8px;
+    padding:14px 18px; min-width:120px;
+  }
+  .stat .num{font-size:24px; font-weight:800;}
+  .stat .lbl{font-size:11.5px; color:#6b7b8c; text-transform:uppercase; letter-spacing:.5px;}
+  .stat.alert .num{color:var(--alert);}
+
+  main h2{font-size:14px; text-transform:uppercase; letter-spacing:1px; color:#4c5b6b; margin:0 0 14px;}
+  .feed{display:flex; flex-direction:column; gap:10px;}
+  .card{
+    background:#fff; border:1px solid #dde3e9; border-radius:8px;
+    padding:14px 16px; display:flex; gap:14px; align-items:flex-start;
+  }
+  .badge{
+    font-size:10.5px; font-weight:800; padding:5px 9px; border-radius:5px;
+    text-transform:uppercase; letter-spacing:.4px; white-space:nowrap; margin-top:2px;
+  }
+  .badge.high{background:#fde3de; color:#a8331d;}
+  .badge.med{background:#fff0da; color:#9a6300;}
+  .badge.low{background:#e2f3ea; color:#1f7a4d;}
+  .card .body{flex:1;}
+  .card .top-row{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+  .card .type{font-weight:700; font-size:14px;}
+  .card .meta{font-size:11.5px; color:#7f8fa0; margin-top:2px;}
+  .card .desc{font-size:12.8px; color:#3a4a5a; margin-top:6px; line-height:1.45;}
+  .status{
+    font-size:10.5px; font-weight:700; padding:4px 9px; border-radius:20px;
+    border:1px solid currentColor; height:fit-content;
+  }
+  .status.new{color:#a8331d;}
+  .status.review{color:#9a6300;}
+  .status.resolved{color:#1f7a4d;}
+  .empty{color:#8899a8; font-size:13px; padding:20px 0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="mark">SIM</div>
+    <div>
+      <h1>Security Incident Mapping</h1>
+      <p>AAUA Akungba-Akoko — Campus Safety Reporting</p>
+    </div>
+  </div>
+  <div class="hint" style="text-align:right; color:#9fb0c2;">Prototype — SEN202 Weekend Dev</div>
+</header>
+
+<div class="layout">
+  <div class="panel">
+    <h2>Report an Incident</h2>
+    <form id="reportForm">
+      <label for="reporterRole">You are reporting as</label>
+      <select id="reporterRole">
+        <option>Student</option>
+        <option>Staff</option>
+        <option>Landlord / Off-campus Resident</option>
+      </select>
+
+      <label for="type">Incident type</label>
+      <select id="type" required>
+        <option value="">Select type…</option>
+        <option>Stabbing</option>
+        <option>Sexual Assault / Rape</option>
+        <option>Stealing / Theft</option>
+        <option>Murder</option>
+        <option>Assault / Fight</option>
+        <option>Suspicious Activity</option>
+        <option>Other</option>
+      </select>
+
+      <label for="location">Location on/near campus</label>
+      <input type="text" id="location" placeholder="e.g. Behind Fajuyi Hall, off-campus at Oke-Agbede" required>
+
+      <label for="desc">What happened?</label>
+      <textarea id="desc" placeholder="Briefly describe the incident: what, when, who was involved…" required></textarea>
+
+      <div class="toggle-row">
+        <input type="checkbox" id="anon" checked>
+        <span>Submit anonymously — my identity is not attached to this report</span>
+      </div>
+
+      <button type="submit" class="submit">Submit Report</button>
+      <p class="hint">Reports are routed to campus security for verification. If this is a life-threatening emergency, contact security directly first.</p>
+    </form>
+  </div>
+
+  <main>
+    <div class="stats" id="stats"></div>
+    <h2>Live Incident Feed</h2>
+    <div class="feed" id="feed"></div>
+  </main>
+</div>
+
+<script>
+let incidents = [
+  {type:"Stealing / Theft", location:"New Hostel B, AAUA", desc:"Laptop reported missing from room during evening prep.", role:"Student", anon:true, status:"review", time:"2h ago", sev:"med"},
+  {type:"Suspicious Activity", location:"Back gate, off-campus route", desc:"Unknown persons loitering near the back gate after dark for the past 3 nights.", role:"Landlord / Off-campus Resident", anon:true, status:"new", time:"5h ago", sev:"low"},
+  {type:"Assault / Fight", location:"Cafeteria area", desc:"Physical altercation between two students, resolved by security on duty.", role:"Staff", anon:false, status:"resolved", time:"1d ago", sev:"high"},
+];
+
+const sevMap = {
+  "Stabbing":"high", "Sexual Assault / Rape":"high", "Murder":"high",
+  "Assault / Fight":"high", "Stealing / Theft":"med", "Suspicious Activity":"low", "Other":"low"
+};
+
+function render(){
+  const feed = document.getElementById("feed");
+  const stats = document.getElementById("stats");
+
+  const total = incidents.length;
+  const high = incidents.filter(i=>i.sev==="high").length;
+  const newCount = incidents.filter(i=>i.status==="new").length;
+
+  stats.innerHTML = `
+    <div class="stat"><div class="num">${total}</div><div class="lbl">Total Reports</div></div>
+    <div class="stat alert"><div class="num">${high}</div><div class="lbl">High Severity</div></div>
+    <div class="stat"><div class="num">${newCount}</div><div class="lbl">Awaiting Review</div></div>
+  `;
+
+  if(incidents.length === 0){
+    feed.innerHTML = `<div class="empty">No incidents reported yet.</div>`;
+    return;
+  }
+
+  feed.innerHTML = incidents.map(i => `
+    <div class="card">
+      <span class="badge ${i.sev}">${i.sev === 'high' ? 'High' : i.sev === 'med' ? 'Medium' : 'Low'}</span>
+      <div class="body">
+        <div class="top-row">
+          <div>
+            <div class="type">${i.type}</div>
+            <div class="meta">${i.location} · reported by ${i.anon ? 'Anonymous' : i.role} · ${i.time}</div>
+          </div>
+          <span class="status ${i.status}">${i.status === 'new' ? 'New' : i.status === 'review' ? 'Under Review' : 'Resolved'}</span>
+        </div>
+        <div class="desc">${i.desc}</div>
+      </div>
+    </div>
+  `).join("");
+}
+
+document.getElementById("reportForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const type = document.getElementById("type").value;
+  const location = document.getElementById("location").value;
+  const desc = document.getElementById("desc").value;
+  const role = document.getElementById("reporterRole").value;
+  const anon = document.getElementById("anon").checked;
+
+  incidents.unshift({
+    type, location, desc, role, anon,
+    status:"new", time:"just now", sev: sevMap[type] || "low"
+  });
+
+  this.reset();
+  document.getElementById("anon").checked = true;
+  render();
+});
+
+render();
+</script>
+
+</body>
+</html>
