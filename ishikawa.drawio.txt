@@ -1,0 +1,244 @@
+<mxfile host="app.diagrams.net" version="24.0.0">
+  <diagram name="Ishikawa - SIM" id="ishikawa-sim">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c101" style="endArrow=block;html=1;strokeColor=#000000;strokeWidth=3;" edge="1" parent="1">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="130.0" y="450.0" as="sourcePoint" />
+    <mxPoint x="1180.0" y="450.0" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+    <mxCell id="c102" value="Under-reported &amp; Unresolved&#10;Campus Security Incidents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffdede;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;arcSize=10;" vertex="1" parent="1">
+  <mxGeometry x="1180.0" y="390.0" width="220" height="120" as="geometry" />
+</mxCell>
+    <mxCell id="c103" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1180.0" y="450.0" as="sourcePoint" />
+        <mxPoint x="1180.0" y="445.0" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c104" style="endArrow=none;html=1;strokeColor=#2255AA;strokeWidth=2.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="260.0" y="450.0" as="sourcePoint" />
+        <mxPoint x="370.0" y="240.0" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c105" value="People" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontWeight=bold;fontColor=#2255AA;" vertex="1" parent="1">
+      <mxGeometry x="330.0" y="205.0" width="220" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="c106" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="298.5" y="376.5" as="sourcePoint" />
+        <mxPoint x="388.5" y="321.5" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c107" value="Fear of retaliation/victimization" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="393.5" y="311.5" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c108" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="329.3" y="317.7" as="sourcePoint" />
+        <mxPoint x="419.3" y="262.7" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c109" value="Low trust in campus authorities" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="424.3" y="252.7" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c110" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="360.1" y="258.9" as="sourcePoint" />
+        <mxPoint x="450.1" y="203.9" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c111" value="Bystander apathy" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="455.1" y="193.9" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c112" style="endArrow=none;html=1;strokeColor=#2255AA;strokeWidth=2.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="500.0" y="450.0" as="sourcePoint" />
+        <mxPoint x="610.0" y="240.0" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c113" value="Process" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontWeight=bold;fontColor=#2255AA;" vertex="1" parent="1">
+      <mxGeometry x="570.0" y="205.0" width="220" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="c114" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="538.5" y="376.5" as="sourcePoint" />
+        <mxPoint x="628.5" y="321.5" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c115" value="No standardized reporting procedure" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="633.5" y="311.5" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c116" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="569.3" y="317.7" as="sourcePoint" />
+        <mxPoint x="659.3" y="262.7" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c117" value="Slow response/escalation time" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="664.3" y="252.7" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c118" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="600.1" y="258.9" as="sourcePoint" />
+        <mxPoint x="690.1" y="203.9" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c119" value="No anonymity option for reporters" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="695.1" y="193.9" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c120" style="endArrow=none;html=1;strokeColor=#2255AA;strokeWidth=2.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="740.0" y="450.0" as="sourcePoint" />
+        <mxPoint x="850.0" y="240.0" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c121" value="Technology" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontWeight=bold;fontColor=#2255AA;" vertex="1" parent="1">
+      <mxGeometry x="810.0" y="205.0" width="220" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="c122" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="778.5" y="376.5" as="sourcePoint" />
+        <mxPoint x="868.5" y="321.5" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c123" value="No centralized reporting platform" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="873.5" y="311.5" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c124" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="809.3" y="317.7" as="sourcePoint" />
+        <mxPoint x="899.3" y="262.7" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c125" value="Limited data/network access" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="904.3" y="252.7" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c126" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="840.1" y="258.9" as="sourcePoint" />
+        <mxPoint x="930.1" y="203.9" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c127" value="Low awareness of digital tools" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="935.1" y="193.9" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c128" style="endArrow=none;html=1;strokeColor=#2255AA;strokeWidth=2.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="260.0" y="450.0" as="sourcePoint" />
+        <mxPoint x="370.0" y="660.0" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c129" value="Environment" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontWeight=bold;fontColor=#2255AA;" vertex="1" parent="1">
+      <mxGeometry x="330.0" y="675.0" width="220" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="c130" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="298.5" y="523.5" as="sourcePoint" />
+        <mxPoint x="388.5" y="578.5" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c131" value="Poor lighting on/around campus" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="393.5" y="568.5" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c132" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="329.3" y="582.3" as="sourcePoint" />
+        <mxPoint x="419.3" y="637.3" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c133" value="Isolated hostels &amp; off-campus lodges" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="424.3" y="627.3" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c134" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="360.1" y="641.1" as="sourcePoint" />
+        <mxPoint x="450.1" y="696.1" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c135" value="Inadequate CCTV/surveillance" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="455.1" y="686.1" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c136" style="endArrow=none;html=1;strokeColor=#2255AA;strokeWidth=2.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="500.0" y="450.0" as="sourcePoint" />
+        <mxPoint x="610.0" y="660.0" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c137" value="Policy/Management" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontWeight=bold;fontColor=#2255AA;" vertex="1" parent="1">
+      <mxGeometry x="570.0" y="675.0" width="220" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="c138" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="538.5" y="523.5" as="sourcePoint" />
+        <mxPoint x="628.5" y="578.5" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c139" value="Weak enforcement of security policy" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="633.5" y="568.5" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c140" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="569.3" y="582.3" as="sourcePoint" />
+        <mxPoint x="659.3" y="637.3" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c141" value="Insufficient security personnel" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="664.3" y="627.3" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c142" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="600.1" y="641.1" as="sourcePoint" />
+        <mxPoint x="690.1" y="696.1" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c143" value="Unclear reporting escalation path" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="695.1" y="686.1" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c144" style="endArrow=none;html=1;strokeColor=#2255AA;strokeWidth=2.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="740.0" y="450.0" as="sourcePoint" />
+        <mxPoint x="850.0" y="660.0" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c145" value="Communication" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontWeight=bold;fontColor=#2255AA;" vertex="1" parent="1">
+      <mxGeometry x="810.0" y="675.0" width="220" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="c146" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="778.5" y="523.5" as="sourcePoint" />
+        <mxPoint x="868.5" y="578.5" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c147" value="No real-time alert/notification system" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="873.5" y="568.5" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c148" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="809.3" y="582.3" as="sourcePoint" />
+        <mxPoint x="899.3" y="637.3" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c149" value="Poor student-staff-security coordination" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="904.3" y="627.3" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c150" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1.2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="840.1" y="641.1" as="sourcePoint" />
+        <mxPoint x="930.1" y="696.1" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="c151" value="Information not centralized or shared" style="text;html=1;align=left;verticalAlign=middle;fontSize=10.5;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="935.1" y="686.1" width="260" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c152" value="Ishikawa (Fishbone) Diagram - SIM: Security Incident Mapping" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontWeight=bold;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="130.0" y="100.0" width="700" height="40" as="geometry" />
+    </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
